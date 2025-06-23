@@ -1,0 +1,1120 @@
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 14px;
+    overflow-x: hidden;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* 헤더 상단 부분 */
+#header_wrap{
+    width: 100%;
+}
+
+.header{
+    width: 1320px;
+    height: 100px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.gnb{
+    display: flex;
+    gap: 10px;
+}
+
+.gnb>li>a{
+    display: block;
+    width: 120px;
+    height: 36px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.5s;
+    color: black;
+    transform: scale(1);
+}
+
+.gnb>li>a:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+    color: #00bdc4;
+}
+
+
+/* 메인 배너 영상 */
+#main_banner_wrap{
+    width: 100%;
+}
+
+.main_banner{
+    height: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* 1번째 레이아웃 */
+#section_1_wrap{
+    height: 1080px;
+    padding: 80px 0px;
+    box-sizing: border-box;
+}
+
+.card img{
+    max-width:100%;
+ }
+ 
+ .card .swiper-slide h1{
+     padding:10px 0;
+ }
+ .card .swiper-slide p{
+     padding-bottom: 30px;
+ }
+ 
+ #section_1{
+     width:1320px;
+     margin:0px auto;
+     position: relative;
+     
+ }
+ .card{
+     padding:220px 0;
+     /*가운데 이미지의 높이에 따라 아래 위 패딩 조정해주세요!*/
+ }
+ 
+ 
+ /* .swiper-button-prev {
+     left: -50px;
+     right: auto;
+ }
+ 
+ .swiper-button-next{
+     right: -50px;
+     left: auto;
+ } */
+
+ /*높이가 다른 슬라이드들을 세로 가운데가 맞게 해줌*/
+ .card .swiper-wrapper{
+     align-items: center;
+}
+
+ /*지금 현재 가운데 보이고 있는 슬라이드는 .swiper-slide-active 라는 클래스를 가지는데 이를 이용해 스타일을 꾸며줌. */
+.card .swiper-slide{
+     background-color: #fff;
+     transform: scale(0.5);
+     flex-shrink: 0;
+     border-radius: 40px;
+     overflow: hidden;
+}
+
+ .card .swiper-slide-prev{
+     transform: scale(1.5);
+     z-index: 5;
+     filter: blur(5px);
+}
+
+ .card .swiper-slide-next{
+     transform: scale(1.5);
+     z-index: 5;
+     filter: blur(5px);
+}
+
+ .card .swiper-slide-active{
+    transform: scale(2);
+    z-index: 10;
+    transition: all 0.3s;
+}
+
+.text{
+    width: 100%;
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
+}
+
+.text_inner{
+    display: inline-block;
+    white-space: nowrap;
+    animation: textLoop 30s linear infinite;
+}
+
+@keyframes textLoop{
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.text_inner>p{
+    display: inline-block;
+    font-weight: 600;
+    font-size: 64px;
+    padding-right: 20px;
+}
+
+.text_2{
+    width: 100%;
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
+}
+
+.text_inner_2{
+    display: inline-block;
+    white-space: nowrap;
+    animation: textLoop_2 30s linear infinite;
+}
+
+@keyframes textLoop_2{
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.text_inner_2>p{
+    display: inline-block;
+    font-weight: 600;
+    font-size: 64px;
+    padding-right: 20px;
+}
+
+.sub_color{
+    color: #45F9FF;
+}
+
+
+
+/* 2번째 레이아웃 */
+#section_2_wrap{
+    height: 1080px;
+    background-color: black;
+}
+
+.section_2{
+    width: 1320px;
+    height: 546px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 267px;
+}
+
+.main_text{
+    font-size: 72px;
+    font-family: 'SBAggroB';
+    color: #45F9FF;
+    padding-bottom: 20px;
+}
+
+.sub_text{
+    font-size: 90px;
+    font-family: 'Pretendard';
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 250px;
+}
+
+.bth{
+    display: inline-block;
+    width: 280px;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 21px 0px;
+    background-color: #45F9FF;
+    border-radius: 40px;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Pretendard';
+    transition: all 0.5s;
+}
+
+.bth:hover{
+    transition: all 0.5s;
+    background-color: #000;
+    color: #45F9FF;
+    box-shadow: 0px 0px 15px 5px #45F9FF;
+}
+
+
+/* 3번째 레이아웃 */
+#section_3_wrap{
+    height: 1080px;
+}
+
+.section_3{
+    width: 1320px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.h1_text{
+    font-size: 60px;
+    font-family: 'SBAggroB';
+    padding-bottom: 60px;
+    padding-top: 100px;
+}
+
+.intro{
+    font-size: 40px;
+    font-family: 'Pretendard';
+    padding-bottom: 30px;
+}
+
+.Neon_sky{
+    color: #00bdc4;
+}
+
+.post{
+    font-size: 24px;
+    font-family: 'Pretendard';
+    padding-bottom: 120px;
+}
+
+.process{
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.box{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    padding: 22px;
+    border-radius: 40px;
+    justify-content: center;
+    align-content: center;
+    transition: all 0.4s;
+    box-shadow: 0px 0px 0px #00000040, inset 0px 0px 32px #00000030;
+}
+
+.box:hover{
+    transform: translate(-10px, -10px);
+    transition: all 0.4s;
+    box-shadow: 6px 6px 20px #45F9FF90,inset 0px 0px 32px #45F9FF90;
+}
+
+.box>img{
+    justify-content: center;
+    align-content: center;
+}
+
+.process>li>p{
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Pretendard';
+}
+
+
+/* 4번째 레이아웃 */
+#section_4_wrap{
+    height: 1080px;
+    background-color: #000;
+}
+
+.section_4{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro_2{
+    font-size: 40px;
+    font-family: 'Pretendard';
+    padding: 100px 0px 30px 0px;
+    color: #fff;
+}
+
+.intro_2>.Neon_sky{
+    color: #45F9FF;
+}
+
+.post_2{
+    font-size: 24px;
+    font-family: 'Pretendard';
+    color: #fff;
+}
+
+/* 흘려가는 이미지 효과 */
+#slide_box{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/*width를 본인에 맞게 수정하여 사용하세요! --아래 3개*/
+.inner{
+    width: 7320px;
+    /*ul길이의 두배!*/
+    display: flex;
+    animation: rotate 35s linear infinite;
+    padding: 60px 0px;
+}
+
+.inner>ul{
+    display: flex;
+    width: 3660px;
+    /*li크기를 전부합한것보다 더 여유있게.*/
+    justify-content: space-around;
+}
+
+.inner:hover {
+    animation-play-state: paused;
+}
+
+/* .inner>ul>li:hover{
+    box-shadow: 0px 0px 30px #45F9FF;
+} */
+
+/*슬라이드에 호버시 애니메이션이 멈추게 만듦*/
+
+@keyframes rotate {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: -3660px;
+        /*slide_inner의 ul길이와 동일하게 - 설정합니다!*/
+    }
+}
+
+
+/* 호버시 나타나는 효과 */
+.inner>ul>li{
+    position: relative;
+}
+
+.inner>ul>li{
+    width: 420px;
+    height: 560px;
+    box-sizing: border-box;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.inner>ul>li>img{
+    display: block;
+    width: 420px;
+    height: 560px;
+}
+
+.hover_effect{
+    position: absolute;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.8);
+    width:420px;
+    height:560px;
+    box-sizing: border-box;
+    text-align: center;
+    opacity: 0;
+    transition:all 0.5s;
+}
+
+.inner>ul>li:hover .hover_effect{
+    opacity:1;
+}
+
+.inner>ul>li:hover .en_name{
+    top: 80px;
+}
+
+.inner>ul>li:hover .ko_name{
+    bottom: 80px;
+}
+
+.en_name{
+    position:absolute;
+    top:-100px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Pretendard';
+    transition:all 0.5s;
+    justify-content: center;
+    color: #45F9FFc5;
+}
+
+.ko_name{
+    position:absolute;
+    bottom:-100px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Pretendard';
+    transition:all 0.5s;
+    justify-content: center;
+    color: #ffffffc5;
+}
+
+
+/* 5번째 레이아웃 */
+#section_5_wrap{
+    height: 1080px;
+}
+
+.section_5{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro_3{
+    font-size: 40px;
+    font-family: 'Pretendard';
+    padding-bottom: 80px;
+}
+
+.information_3{
+    display: flex;
+    justify-content: space-between;
+}
+
+.information_3>li{
+    width: 400px;
+    height: 400px;
+    box-sizing: border-box;
+    border-radius: 40px;
+    position: relative;
+}
+
+.information_3>li>img{
+    width: 100%;
+    border-radius: 40px;
+}
+
+.down_box{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: -2;
+    border-radius: 40px;
+    background-color: #00bdc4;
+    width: 400px;
+    height: 200px;
+    box-sizing: border-box;
+    transition: all 1s;
+}
+
+.information_3>li:hover .down_box{
+    bottom: -70px;
+}
+
+.down_box>p{
+    position: relative;
+    bottom: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Pretendard';
+}
+
+.down_box>.one_media{
+    font-size: 20px;
+}
+
+
+/* 6번째 레이아웃 */
+#section_6_wrap{
+    height: 1080px;
+    background-color: #000;
+}
+
+.section_6{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro_4{
+    font-size: 40px;
+    font-family: 'Pretendard';
+    padding: 100px 0px;
+    color: #fff;
+}
+
+.icon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 66px;
+}
+
+.icon_box{
+    background-color: #45F9FF;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    justify-content: center;
+    align-content: center;
+    transition: all 0.3s;
+}
+
+.icon_box>img{
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+.icon_name{
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Pretendard';
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.icon>li:hover .icon_box>img{
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+.icon>li:hover .icon_box{
+    border-radius: 0%;
+    transition: all 0.3s;
+}
+
+
+/* 7번째 레이아웃 */
+#section_7_wrap{
+    height: 1080px;
+}
+
+.section_7{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro_5{
+    font-size: 40px;
+    font-family: 'Pretendard';
+    padding: 100px 0px;
+}
+
+/* 흘려가는 이미지 효과 */
+#slide_2_box{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+/*width를 본인에 맞게 수정하여 사용하세요! --아래 3개*/
+.inner_2{
+    width: 5440px;
+    /*ul길이의 두배!*/
+    display: flex;
+    animation: rotate 35s linear infinite;
+}
+
+.inner_2>ul{
+    display: flex;
+    width: 2720px;
+    /*li크기를 전부합한것보다 더 여유있게.*/
+    justify-content: space-around;
+}
+
+.inner_2:hover {
+    animation-play-state: paused;
+}
+
+/* .inner>ul>li:hover{
+    box-shadow: 0px 0px 30px #45F9FF;
+} */
+
+/*슬라이드에 호버시 애니메이션이 멈추게 만듦*/
+
+@keyframes rotate {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: -2720px;
+        /*slide_inner의 ul길이와 동일하게 - 설정합니다!*/
+    }
+}
+
+
+/* 호버시 나타나는 효과 */
+.inner_2>ul>li{
+    position: relative;
+}
+
+.inner_2>ul>li{
+    width: 640px;
+    height: 340px;
+    box-sizing: border-box;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.inner_2>ul>li>img{
+    display: block;
+    width: 640px;
+    height: 340px;
+}
+
+.hover_effect_2{
+    position: absolute;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.7);
+    width:640px;
+    height:340px;
+    box-sizing: border-box;
+    text-align: center;
+    align-content: center;
+    opacity: 0;
+    transition:all 0.5s;
+}
+
+.hover_effect_2>p{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Pretendard';
+}
+
+.inner_2>ul>li:hover .hover_effect_2{
+    opacity:1;
+}
+
+
+/* 흘려가는 이미지 효과 */
+#slide_3_box{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/*width를 본인에 맞게 수정하여 사용하세요! --아래 3개*/
+.inner_3{
+    width: 5440px;
+    /*ul길이의 두배!*/
+    display: flex;
+    animation: rotate_2 35s linear infinite;
+
+}
+
+.inner_3>ul{
+    display: flex;
+    width: 2720px;
+    /*li크기를 전부합한것보다 더 여유있게.*/
+    justify-content: space-around;
+}
+
+.inner_3:hover {
+    animation-play-state: paused;
+}
+
+/* .inner>ul>li:hover{
+    box-shadow: 0px 0px 30px #45F9FF;
+} */
+
+/*슬라이드에 호버시 애니메이션이 멈추게 만듦*/
+
+@keyframes rotate_2 {
+    100% {
+        margin-left: 0px;
+    }
+
+    0% {
+        margin-left: -2720px;
+        /*slide_inner의 ul길이와 동일하게 - 설정합니다!*/
+    }
+}
+
+
+/* 호버시 나타나는 효과 */
+.inner_3>ul>li{
+    position: relative;
+}
+
+.inner_3>ul>li{
+    width: 640px;
+    height: 340px;
+    box-sizing: border-box;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.inner_3>ul>li>img{
+    display: block;
+    width: 640px;
+    height: 340px;
+}
+
+.hover_effect_3{
+    position: absolute;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.7);
+    width:640px;
+    height:340px;
+    box-sizing: border-box;
+    text-align: center;
+    align-content: center;
+    opacity: 0;
+    transition:all 0.5s;
+}
+
+.hover_effect_3>p{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Pretendard';
+}
+
+.inner_3>ul>li:hover .hover_effect_3{
+    opacity:1;
+}
+
+
+/* 8번째 레이아웃 */
+#section_8_wrap{
+    height: 1080px;
+    background-color: #000;
+}
+
+.section_8{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section_8>.h1_text{
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'SBAggroB';
+}
+
+.community{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 180px;
+}
+
+.community>li{
+    width: 420px;
+    height: 420px;
+    box-sizing: border-box;
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.community>li>img{
+    width: 100%;
+    height: 100%;
+}
+
+.effect_2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    width: 420px;
+    height: 420px;
+    opacity: 0;
+    transition: all 0.5s;
+    box-sizing: border-box;
+    align-content: center;
+}
+
+.effect_2>p{
+    color: #45F9FF;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.community>li:hover{
+    transition: all 0.5s;
+    box-shadow: 0px 0px 20px 2px #45F9FF;
+}
+
+.community>li:hover .effect_2{
+    transition: all 0.5s;
+    opacity: 1;
+}
+
+
+/* 9번째 레이아웃 */
+#section_9_wrap{
+    height: 1080px;
+}
+
+.section_9{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section_9>.h1_text{
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'SBAggroB';
+    padding-bottom: 40px;
+}
+
+#menu{
+    width: 1320px;
+    margin: 0 auto;
+}
+  
+.tabs{
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    padding-bottom: 60px;
+}
+  
+.tabs>li>span{
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Pretendard';
+    width: 112px;
+    height: 30px;
+    box-sizing: border-box;
+}
+  
+  /*지금 클릭한 tab부분을 나타내는 클래스는 li에 active라는 이름으로 붙는다.*/
+.tabs li.active span{
+    border-bottom: 3px solid #000;
+    padding-bottom: 4px;
+    font-weight: 900;
+}
+
+/* 아코디언 FAQ */
+.title{
+	overflow:hidden;
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.title_in{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    width: 1320px;
+    height: 60px;
+    padding: 0px 40px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-sizing: border-box;
+    border-radius: 30px;
+    border: 2px solid #000;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Pretendard';
+}
+
+.title_in>p{
+    align-content: center;
+}
+
+.plus{
+    align-content: center;
+}
+
+.text_info{
+    text-align: left;
+	display:none;
+    font-size: 20px;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+
+/*+모양 회전관련 속성. 요부분은 반드시 복사해서 가져가세요~*/
+.turn .title img{
+	transform:rotate(45deg);
+}
+
+.plus img{
+	transition:transform 0.5s;
+}
+
+
+/* 풋더 하단 부분 */
+#footer_wrap{
+    height: 400px;
+    box-sizing: border-box;
+    background-color: #000;
+    padding: 50px 0px;
+}
+
+.footer{
+    width: 1320px;
+    margin: 0px auto;
+    box-sizing: border-box;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_name{
+    margin-bottom: 50px;
+}
+
+.logo_name>h2{
+    font-size: 36px;
+    font-weight: 800;
+    font-family: 'Pretendard';
+    line-height: 34px;
+}
+
+.logo_name>h2>span{
+    color: #45F9FF;
+}
+
+.logo_name>.sub_title{
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Pretendard';
+}
+
+.sub_title{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Pretendard';
+}
+
+.content>p{
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+.Tel, .E-mail{
+    font-weight: 300;
+}
+
+.content_2{
+    height: 125px;
+    box-sizing: border-box;
+}
+
+.Tel{
+    margin-bottom: 33px;
+}
+
+.mid_content{
+    width: 460px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright{
+    font-size: 16px;
+    font-weight: 300;
+    align-content: center;
+    text-align: center;
+}
+
+.sns{
+    align-items: center;
+    display: flex;
+    text-align: center;
+    gap: 20px;
+}
+
+.sns>li>a{
+    display: block;
+    align-content: center;
+    width: 120px;
+    height: 120px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid #45F9FF;
+    font-size: 24px;
+    font-weight: 300;
+    color: #45F9FF;
+}
+
+.sns>li>a:hover{
+    font-weight: 400;
+    background-color: #45F9FF;
+    color: #000;
+    border: none;
+}
+
+/* 탑 버튼 */
+.top{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:50px;
+}
+
+.top>a{
+    display:inline-block;
+    padding:10px 15px;
+    background:#45F9FF;
+    color:#000;
+    font-weight: 900;
+    margin-bottom:5px;
+    border-radius:50%;
+    transition: all 0.5s;
+}
+
+.top>a:hover{
+    transition: all 0.5s;
+    background-color: #000;
+    color: #45F9FF;
+    box-shadow: 0px 0px 10px #45F9FF;
+}
