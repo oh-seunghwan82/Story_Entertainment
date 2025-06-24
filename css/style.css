@@ -84,9 +84,30 @@ a{
     }
 }
 
-@media(max-width:700px){
-    .gnb>li{
+@media(max-width:600px){
+    .header{
+        width: 90%;
+        justify-content: center;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+
+    .gnb{
         width: 100%;
+        text-align: center;
+        justify-content: center;
+        margin: 0px auto;
+        display: flex;
+        gap: 30px;
+    }
+
+    .gnb>li>a{
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .gnb>li>a:hover{
+        transition: all 0.5s;
     }
 }
 
@@ -97,17 +118,30 @@ a{
 }
 
 .main_banner{
-    height: 960px;
     margin: 0 auto;
     text-align: center;
 }
 
 .main_banner>video{
-    max-width: 100%;
+    width: 100%;
 }
 
 @media(max-width:1100px){
-    #main_bannerMwrap{
+    #main_banner_wrap{
+        width: 100%;
+    }
+
+    .main_banner{
+        width: 100%;
+    }
+
+    video{
+        width: 100%;
+    }
+}
+
+@media(max-width:600px){
+    #main_banner_wrap{
         width: 100%;
     }
 
@@ -122,9 +156,10 @@ a{
 
 
 /* 1번째 레이아웃 */
-#section_1_wrap{
-    height: 1080px;
+
+.content_wrap{
     box-sizing: border-box;
+    padding: 100px 0px;
 }
 
 .card img{
@@ -247,28 +282,31 @@ a{
     .text_inner_2>p{
         font-size: 40px;
     }
+}
 
-    .content_wrap{
-        width: 100%;
-        height: 300px;
+@media(max-width:700px){
+    .text_inner>p{
+        font-size: 32px;
+    }
+
+    .text_inner_2>p{
+        font-size: 32px;
     }
 }
 
 
-
 /* 2번째 레이아웃 */
 #section_2_wrap{
-    height: 1080px;
     background-color: black;
 }
 
 .section_2{
     width: 1320px;
-    height: 546px;
+    padding: 267px 0px;
+    height: auto;
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 0px auto;
     text-align: center;
-    padding-top: 267px;
 }
 
 .main_text{
@@ -329,15 +367,35 @@ a{
     }
 }
 
+@media(max-width:700px){
+    .section_2{
+        width: 100%;
+    }
+
+    .main_text{
+        font-size: 30px;
+    }
+
+    .sub_text{
+        font-size: 32px;
+    }
+
+    .bth{
+        width: 90%;
+        height: 60px;
+        border-radius: 0%;
+        box-sizing: border-box;
+        font-size: 20px;
+        padding: 18px 0px;
+    }
+}
+
 
 /* 3번째 레이아웃 */
-#section_3_wrap{
-    height: 1080px;
-}
 
 .section_3{
     width: 1320px;
-    margin: 0px auto;
+    margin: 100px auto;
     text-align: center;
 }
 
@@ -345,7 +403,6 @@ a{
     font-size: 60px;
     font-family: 'SBAggroB';
     padding-bottom: 60px;
-    padding-top: 100px;
 }
 
 .intro{
@@ -447,10 +504,54 @@ a{
     }
 }
 
+@media(max-width:700px){
+    .section_3{
+        width: 100%;
+    }
+
+    .h1_text{
+        font-size: 40px;
+    }
+
+    .intro{
+        font-size: 24px;
+        font-family: 'Pretendard';
+        padding-bottom: 30px;
+    }
+
+    .post{
+        font-size: 16px;
+        font-family: 'Pretendard';
+        padding-bottom: 120px;
+    }
+
+    .process>li>p{
+        font-size: 12px;
+    }
+
+    .process{
+        justify-content: space-around;
+        gap: 6px;
+    }
+
+    .process>li{
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .box{
+        width: 86px;
+        height: 86px;
+    }
+
+    .box>img{
+        width: 100%;
+    }
+}
+
 
 /* 4번째 레이아웃 */
 #section_4_wrap{
-    height: 1080px;
     background-color: #000;
 }
 
@@ -482,6 +583,7 @@ a{
     width: 100%;
     overflow: hidden;
     position: relative;
+    padding-bottom: 100px;
 }
 
 /*width를 본인에 맞게 수정하여 사용하세요! --아래 3개*/
@@ -614,6 +716,7 @@ a{
         width: 100%;
         overflow: hidden;
         position: relative;
+        padding-bottom: 100px;
     }
 
     /*width를 본인에 맞게 수정하여 사용하세요! --아래 3개*/
@@ -726,14 +829,146 @@ a{
 }
 
 
-/* 5번째 레이아웃 */
-#section_5_wrap{
-    height: 1080px;
+@media(max-width:700px){
+    .section_4{
+        width: 100%;
+    }
+
+    .intro_2{
+    font-size: 24px;
+    font-family: 'Pretendard';
+    padding: 100px 0px 30px 0px;
+    color: #fff;
+    }
+
+    .post_2{
+    font-size: 16px;
+    font-family: 'Pretendard';
+    color: #fff;
+    }
+
+    /* 흘려가는 이미지 효과 */
+    #slide_box{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    /*width를 본인에 맞게 수정하여 사용하세요! --아래 3개*/
+    .inner{
+        width: 4600px;
+        /*ul길이의 두배!*/
+        display: flex;
+        animation: rotate 35s linear infinite;
+        padding: 60px 0px;
+    }
+
+    .inner>ul{
+        display: flex;
+        width: 2300px;
+        /*li크기를 전부합한것보다 더 여유있게.*/
+        justify-content: space-around;
+    }
+
+    .inner:hover {
+        animation-play-state: paused;
+    }
+
+    /* .inner>ul>li:hover{
+        box-shadow: 0px 0px 30px #45F9FF;
+    } */
+
+    /*슬라이드에 호버시 애니메이션이 멈추게 만듦*/
+
+    @keyframes rotate {
+        0% {
+            margin-left: 0;
+        }
+
+        100% {
+            margin-left: -2300px;
+            /*slide_inner의 ul길이와 동일하게 - 설정합니다!*/
+        }
+    }
+
+
+    /* 호버시 나타나는 효과 */
+    .inner>ul>li{
+        position: relative;
+    }
+
+    .inner>ul>li{
+        width: 260px;
+        height: 340px;
+        box-sizing: border-box;
+        border-radius: 40px;
+        overflow: hidden;
+    }
+
+    .inner>ul>li>img{
+        display: block;
+        width: 100%;
+    }
+
+    .hover_effect{
+        position: absolute;
+        top:0;
+        left:0;
+        background:rgba(0,0,0,0.8);
+        width:260px;
+        height:340px;
+        box-sizing: border-box;
+        text-align: center;
+        opacity: 0;
+        transition:all 0.5s;
+    }
+
+    .inner>ul>li:hover .hover_effect{
+        opacity:1;
+    }
+
+    .inner>ul>li:hover .en_name{
+        top: 60px;
+    }
+
+    .inner>ul>li:hover .ko_name{
+        bottom: 60px;
+    }
+
+    .en_name{
+        position:absolute;
+        top:-40px;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 24px;
+        font-weight: bold;
+        font-family: 'Pretendard';
+        transition:all 0.5s;
+        justify-content: center;
+        color: #45F9FFc5;
+    }
+
+    .ko_name{
+        position:absolute;
+        bottom:-40px;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Pretendard';
+        transition:all 0.5s;
+        justify-content: center;
+        color: #ffffffc5;
+    }    
+
 }
+
+
+/* 5번째 레이아웃 */
 
 .section_5{
     width: 1320px;
-    margin: 0 auto;
+    margin: 100px auto;
     text-align: center;
 }
 
@@ -795,6 +1030,7 @@ a{
 @media(max-width:1100px){
     .section_5{
         width: 100%;
+        margin-bottom: 100px;
     }
 
     .intro_3{
@@ -818,7 +1054,7 @@ a{
     }
 
     .information_3>li:hover .down_box{
-        top: 40px;
+        top: 44px;
     }
 
     .down_box{
@@ -828,7 +1064,7 @@ a{
         z-index: -2;
         border-radius: 40px;
         width: 100%;
-        height: 100%;
+        height: 98%;
     }
 
     .down_box>p{
@@ -844,15 +1080,76 @@ a{
 
 }
 
+@media(max-width:700px){
+    #section_5_wrap{
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .section_5{
+        width: 100%;
+    }
+
+    .section_5>.h1_text{
+        padding-bottom: 20px;
+    }
+
+    .intro_3{
+        font-size: 24px;
+        font-family: 'Pretendard';
+        padding-bottom: 40px;
+    }
+
+    .information_3{
+       display: inline-block;
+       flex-wrap: wrap;
+       margin: 0 auto;
+       justify-content: center;
+    }
+
+    .information_3>li{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .information_3>li>img{
+        width: 100%;
+        height: 100%;
+    }
+
+     .information_3>li:hover .down_box{
+        top: 60px;
+    }
+
+    .down_box{
+        position: absolute;
+        display: inline-block;
+        justify-content: center;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -2;
+        border-radius: 40px;
+        width: 100%;
+        height: 95%;
+    }
+
+     .down_box>p{
+        position: relative;
+        bottom: -90%;
+        font-size: 18px;
+    }
+
+}
+
 /* 6번째 레이아웃 */
 #section_6_wrap{
-    height: 1080px;
     background-color: #000;
 }
 
 .section_6{
     width: 1320px;
-    margin: 0 auto;
+    margin: 100px auto;
     text-align: center;
 }
 
@@ -867,6 +1164,7 @@ a{
     display: flex;
     flex-wrap: wrap;
     gap: 66px;
+    padding-bottom: 100px;
 }
 
 .icon_box{
@@ -923,6 +1221,7 @@ a{
         width: 90%;
         margin: 0 auto;
         gap: 90px;
+        margin-bottom: 100px;
     }
 
     .icon_box{
@@ -944,11 +1243,50 @@ a{
 
 }
 
+@media(max-width:700px){
+    .section_6{
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .intro_4{
+        font-size: 24px;
+        font-family: 'Pretendard';
+        padding: 100px 0px;
+        color: #fff;
+    }
+
+    .icon{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        gap: 30px;
+        margin-bottom: 100px;
+    }
+
+    .icon_box{
+        width: 120px;
+        height: 120px;
+    }
+
+    .icon_box>img{
+        width: 60%;
+    }
+
+    .icon>li>p{
+        color: #fff;
+        font-size: 14px;
+        font-family: 'Pretendard';
+        font-weight: 400;
+        padding-top: 12px;
+    }
+
+}
+
 
 /* 7번째 레이아웃 */
-#section_7_wrap{
-    height: 1080px;
-}
 
 .section_7{
     width: 1320px;
@@ -959,7 +1297,7 @@ a{
 .intro_5{
     font-size: 40px;
     font-family: 'Pretendard';
-    padding: 100px 0px;
+    padding-bottom: 100px;
 }
 
 /* 흘려가는 이미지 효과 */
@@ -1057,6 +1395,7 @@ a{
     width: 100%;
     overflow: hidden;
     position: relative;
+    margin-bottom: 100px;
 }
 
 /*width를 본인에 맞게 수정하여 사용하세요! --아래 3개*/
@@ -1151,7 +1490,6 @@ a{
     .intro_5{
         font-size: 32px;
         font-family: 'Pretendard';
-        padding: 100px 0px;
     }
 
     .inner_2{
@@ -1305,16 +1643,179 @@ a{
 }
 
 
+@media(max-width:700px){
+    .section_7{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .intro_5{
+        font-size: 24px;
+        font-family: 'Pretendard';
+    }
+
+    .inner_2{
+        width: 4000px;
+        /*ul길이의 두배!*/
+        display: flex;
+        animation: rotate 35s linear infinite;
+    }
+
+    .inner_2>ul{
+        display: flex;
+        width: 2000px;
+        /*li크기를 전부합한것보다 더 여유있게.*/
+        justify-content: space-around;
+    }
+
+    .inner_2:hover {
+        animation-play-state: paused;
+    }
+
+    /* .inner>ul>li:hover{
+        box-shadow: 0px 0px 30px #45F9FF;
+    } */
+
+    /*슬라이드에 호버시 애니메이션이 멈추게 만듦*/
+
+    @keyframes rotate {
+        0% {
+            margin-left: 0;
+        }
+
+        100% {
+            margin-left: -2000px;
+            /*slide_inner의 ul길이와 동일하게 - 설정합니다!*/
+        }
+    }
+    .inner_3{
+        width: 4000px;
+        /*ul길이의 두배!*/
+        display: flex;
+        animation: rotate_2 35s linear infinite;
+    }
+
+    .inner_3>ul{
+        display: flex;
+        width: 2000px;
+        /*li크기를 전부합한것보다 더 여유있게.*/
+        justify-content: space-around;
+    }
+
+    .inner_3:hover {
+        animation-play-state: paused;
+    }
+
+    /* .inner>ul>li:hover{
+        box-shadow: 0px 0px 30px #45F9FF;
+    } */
+
+    /*슬라이드에 호버시 애니메이션이 멈추게 만듦*/
+
+    @keyframes rotate_2 {
+    100% {
+        margin-left: 0px;
+    }
+
+    0% {
+        margin-left: -2000px;
+        /*slide_inner의 ul길이와 동일하게 - 설정합니다!*/
+    }
+}
+
+    .hover_effect_3>p{
+        font-size: 20px;
+        color: #fff;
+        font-weight: 500;
+        font-family: 'Pretendard';
+    }
+
+    .hover_effect_2>p{
+        font-size: 20px;
+        color: #fff;
+        font-weight: 500;
+        font-family: 'Pretendard';
+    }
+
+    #slide_2_box{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 40px;
+    }
+
+    #slide_3_box{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+
+    }
+
+    .inner_2>ul>li{
+        width: 460px;
+        height: 240px;
+        box-sizing: border-box;
+        border-radius: 40px;
+        overflow: hidden;
+    }
+
+    .inner_2>ul>li>img{
+        width: 100%;
+    }
+
+    .hover_effect_2{
+        position: absolute;
+        top:0;
+        left:0;
+        background:rgba(0,0,0,0.7);
+        width: 460px;
+        height: 240px;
+        box-sizing: border-box;
+        text-align: center;
+        align-content: center;
+        opacity: 0;
+        transition:all 0.5s;
+    }
+
+    .hover_effect_3{
+        position: absolute;
+        top:0;
+        left:0;
+        background:rgba(0,0,0,0.7);
+        width: 460px;
+        height: 240px;
+        box-sizing: border-box;
+        text-align: center;
+        align-content: center;
+        opacity: 0;
+        transition:all 0.5s;
+    }
+
+    .inner_3>ul>li{
+        width: 460px;
+        height: 240px;
+        box-sizing: border-box;
+        border-radius: 40px;
+        overflow: hidden;
+    }
+
+    .inner_3>ul>li>img{
+        width: 100%;
+    }
+}
+
+
 /* 8번째 레이아웃 */
 #section_8_wrap{
-    height: 1080px;
     background-color: #000;
 }
 
 .section_8{
     width: 1320px;
-    margin: 0 auto;
+    margin: 0px auto;
     text-align: center;
+    padding: 100px 0px;
 }
 
 .section_8>.h1_text{
@@ -1377,7 +1878,7 @@ a{
 
 @media(max-width:1100px){
     .section_8{
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -1426,19 +1927,68 @@ a{
         font-weight: bold;
     }
 
+}
 
+
+@media(max-width:700px){
+    .section_8{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .section_8>.h1_text{
+        color: #fff;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'SBAggroB';
+    }
+
+    .community{
+        margin-top: 40px;
+        display: block;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 180px;
+    }
+
+    .community>li{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        border-radius: 40px;
+        overflow: hidden;
+        position: relative;
+        transition: all 0.5s;
+    }
+
+    .effect_2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.7);
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: all 0.5s;
+        box-sizing: border-box;
+        align-content: center;
+    }
+
+    .effect_2>p{
+        color: #45F9FF;
+        font-size: 24px;
+        font-weight: bold;
+    }
 
 }
 
 
 /* 9번째 레이아웃 */
-#section_9_wrap{
-    height: 1080px;
-}
 
 .section_9{
     width: 1320px;
-    margin: 0 auto;
+    margin: 100px auto;
     text-align: center;
 }
 
@@ -1533,7 +2083,7 @@ a{
 @media(max-width:1100px){
     .section_9{
         width: 100%;
-        margin: 0 auto;
+        margin: 100px auto;
     }
 
     .section_9>.h1_text{
