@@ -307,7 +307,7 @@ a{
 .section_2{
     width: 1320px;
     padding: 100px 0px;
-    background-color: rgba(255, 255, 255, 0.5);
+    /* background-color: rgba(255, 255, 255, 0.5); */
     backdrop-filter: blur(15px);
     border-radius: 40px;
     height: auto;
